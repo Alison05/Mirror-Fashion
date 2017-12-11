@@ -56,3 +56,23 @@ p {
 	float: right;
 	margin: 0 0 10px 10px;
 }
+
+/*pseudo-classe*/
+p:first-letter {
+  	font-weight: bold;
+}
+
+/*seletor do irmao adjacente*/
+h1 + p {
+	text-indent: 0;
+}
+
+/*pseudo-elemento
+p:first-line {
+	font-variant: small-caps;
+}*/
+
+:not(p) + p:first-line {
+	font-variant: small-caps;
+}
+/*todos o paragrafos foram afetados com o codigo acima, queremos só os primeiros de cada seçao */

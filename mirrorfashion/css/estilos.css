@@ -178,10 +178,41 @@ footer .container {
 	margin-left: 25px;
 }
 
+/*alterando o estado do elemento quando o usuario passar o mouse*/
+.menu-opcoes a:hover {
+	color: #007dc6;
+}
 
+/*alterando o estado do elemento quando o usuario clicar*/
+.menu-opcoes a:active {
+	color: #867dc6;
+}
 
+/*usando o hover para criar subcategorias*/
+.menu-departamentos li ul{
+	display: none;
+}
 
+.menu-departamentos li:hover ul{
+	display: block;
+}
 
+.menu-departamentos ul ul li {
+	background-color: #dcdcdc;
+}
+
+/*usando o before para adicionar um conteudo novo com a nova propriedade content do CSS*/
+/*melhorando a aparencia com caracteres unicode*/
+.menu-departamentos li li a:before {
+	content: '\272A';
+	padding-right: 3px;
+}
+
+.painel h2:before {
+	content: '\2756';
+	padding-right: 5px;
+	opacity: 0.4;
+}
 
 
 
